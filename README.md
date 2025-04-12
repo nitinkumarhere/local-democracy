@@ -1,22 +1,23 @@
 
-## local-democracy
-# create virtualenv
+# local-democracy
+
+### create virtualenv
 virtualenv env
 
-# activate env
+### activate env
 source env/bin/activate
 
-# install requirements
+### install requirements
 pip intall -r requirements.txt
 
-# change directory to repository
+### change directory to repository
 cd local-democracy
 
-# make migrations
+### make migrations
 python manage.py makemigrations
 
-# migrate
+### migrate
 python manage.py migrate
 
-# runserver
+### runserver
 python manage.py runserver 
