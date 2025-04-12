@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h2>All Issues</h2>
+	<ul>
+	{% for issue in issues %}
+        <li><a href= "{% url 'issue' issue.id %}">{{ issue.description }}</a>
+			<a href="{% url 'delete-issue' issue.id %}">Delete</a>
+		</li>
+	{% endfor %}
+	</ul>
+
+{% endblock %}
